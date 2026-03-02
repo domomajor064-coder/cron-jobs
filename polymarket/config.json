@@ -1,0 +1,27 @@
+{
+  "mode": "paper_trading",
+  "api_key": "019cac63-e1d0-7177-892d-1fe098d565f7",
+  "endpoint": "https://gamma-api.polymarket.com",
+  "discord_channel": "1477849428973846649",
+  "default_model": "minimax/MiniMax-M2.1",
+  "analysis_model": "moonshot/kimi-k2.5",
+  "scan_interval_minutes": 5,
+  "min_edge_percent": 3.0,
+  "max_risk_score": 50,
+  "alert_thresholds": {
+    "price_change_percent": 5,
+    "volume_spike_multiplier": 2,
+    "large_trade_usd": 5000
+  },
+  "paths": {
+    "log_dir": "~/clawd/polymarket/logs",
+    "data_dir": "~/clawd/polymarket/data",
+    "scripts_dir": "~/clawd/scripts"
+  },
+  "installed_skills": [
+    "polymarket-api",
+    "polymarket-odds",
+    "polymarket-analysis",
+    "polymarket-arbitrage"
+  ]
+}
