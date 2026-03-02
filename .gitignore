@@ -1,0 +1,19 @@
+# Logs
+logs/
+*.log
+
+# Data files (contain posted URLs, etc)
+data/
+posted.json
+
+# Local configs with secrets (keep templates only)
+# credentials.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+*.swp
+*~
