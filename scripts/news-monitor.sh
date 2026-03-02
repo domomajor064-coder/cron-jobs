@@ -17,4 +17,12 @@ echo "[$TIMESTAMP] Starting news monitor..." >> "$LOG_DIR/scan.log"
 STATS=$(python3 "$DEDUPE_SCRIPT" stats 2>&1)
 echo "[$TIMESTAMP] $STATS" >> "$LOG_DIR/scan.log"
 
+# Note: Actual searches performed by agent via web_search tool
+# This script handles post-processing and formatting
+
+# Categories to track:
+# 1. OpenClaw/AI agent news (GitHub, HN, Reddit, blogs)
+# 2. Finance news (markets, economy, Fed)
+# 3. Politics news (elections, policy, geopolitics)
+
 echo "[$TIMESTAMP] News monitor ready" >> "$LOG_DIR/scan.log"
